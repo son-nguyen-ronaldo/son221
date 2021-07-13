@@ -1,10 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>Title</title>
 </head>
 <body>
-$END$
+<input type="text" id="aaa">
+<button type="button" onclick="myC()"> Nhấn vào ô</button>
+<p id="nall"></p>
+<script>
+  function myC(){
+    let b= document.getElementById("aaa").value;
+
+    document.getElementById("nall").innerHTML=b;
+alert(b);
+  }
+</script>
+// Vd: Tạo 1 thẻ input nhập dữ liệu vào -> nhấn vào ô-> in ra thẻ P chuỗi vừa nhấn.
+// lấy ra dữ liệu thẻ input : .value và đặt nó = 1 biến b.
+// in ra dữ liệu . inner HTML = b;
+
 </body>
 </html>

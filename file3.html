@@ -1,10 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>Title</title>
 </head>
 <body>
-$END$
+
+<input type="number" id="nam">
+<button onclick="checkyear()"> Tính Năm </button>
+    <h3 id="inra ">
+    </h3>
+
+<script>
+ function checkyear (){
+     let a = document.getElementById("nam").value;
+     if ( a%4==0 && a%100 !=0 || a%100 ==0 && a%400==0){
+         document.getElementById("inra ").innerHTML ="Đây là năm nhuận!";
+     } else {
+         document.getElementById("inra ").innerHTML =" Đây không phải năm nhuận";
+     }
+ }
+
+</script>
 </body>
 </html>

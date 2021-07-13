@@ -1,10 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>Title</title>
 </head>
+<button onclick="show()">show</button>
 <body>
-$END$
+
+<script>
+    function show(){
+        let number = 5;
+        console.log('number = ', number)
+        if (number++ > 5) {
+            console.log('vao if')
+
+            number += 1;
+console.log('number sau khi tang 1 = ',number)
+        } else {
+            console.log('number  duoi else = ',number)
+            console.log('xuong else')
+            number -= 1;
+console.log('')
+        }
+        console.log('number cuoi = ',number)
+    }
+
+
+</script>
+
+
+
+
+</table>
 </body>
 </html>
