@@ -1,10 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Title</title>
+    <meta charset="UTF-8">
+    <title>Title</title>
 </head>
 <body>
+<input type="number" id="aa">
+<button type="button" onclick="Ham()"> Tính số ngày</button>
+<script>
+    function Ham(){
+        let dem = document.getElementById("aa").value;
+        switch (dem){
+            case ("1"):
+                case ("3"):
+                case ("5"):
+                case ("7"):
+                case ("8"):
+                case ("10"):
+                case ("12"):
+
+                alert("Tháng  có 30");
+                break;
+                case("4"):
+                case("6"):
+                case("9"):
+                case("11"):
+                    alert("tháng có 31 ngày");
+                break;
+
+                case ("2"):
+                    alert("tháng có 28 ngày")
+                break;
+                    default:{
+                        alert("Bạn đã nhập sai")
+                    }
+
+
+
+
+
+    }
+
+
+    }
+
+
+</script>
+
 
 </body>
 </html>
