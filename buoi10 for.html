@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+   <script>
+       // đếm từ 1-100, đếm đến 99 thì in hoàn thành
+      // let i=1;
+      // while (i<100){
+      //     document.write(i);
+      //     i++;
+      //     if (i==99){
+      //         alert("hoàn thành");
+      // }
+      //
+      //
+      // }
+      // nhập nhiệt độ, >100 thì thông báo giảm, <20 thì thông báo tăng
+      // let a= prompt("Nhập vào nhiệt độ");
+      // if (a>100){
+      //     alert("Giảm nhiệt độ");
+      // } else if( a<20){
+      //     alert("tăng nhiệt độ");
+      // }
+       //Hiển thị ra 20 số đầu tiên trong dãy fibonasi
+       // let a =0;
+       // let b=1;
+       // let result =b;
+       // let text =0;
+       // for (let i = 1; i <=20 ; i++) {
+       //     if (i==1){
+       //         result=1;
+       //         text = text + result+'<br>';
+       //     }else {
+       //         result = a + b;
+       //         a = b;
+       //         b = result;
+       //         text = text + result +'<br>';
+       //     }
+       // }
+       // document.write(text + '<br>');
+
+       // vẽ hình chữ nhật kín.
+       // for (let i = 0; i <10; i++) {
+       //
+       //     for (let j = 0; j <9 ; j++) {
+       //         document.write("*" );
+       //
+       //
+       //     }
+       //     document.write("</br>")
+       //
+       // }
+// tính tổng
+//        let sum =0;
+//        for (let j = 0; j < 4 ; j++) {
+//            sum +=j;
+//
+//
+//        }
+//        document.write(sum);
+
+       //in ra 20 số fibonaci và tính tổng.
+       let a=0;
+       let b=1;
+       let c= a+b;
+       let count=0;
+       let sum =0;
+       while ( count<20) {
+           // gán 112358, a,b,a+b=c... gán a=b, b=c để tịnh tiến, và c=a+b (lần lặp 2) -> tiếp tục.
+           a = b;
+           b = c;
+           c=a+b;
+           sum +=a;
+
+           count++;
+
+
+           document.write(a +"</br>") ;
+
+       }
+
+       document.write("</br>" +    sum);
+
+
+
+   </script>
+
+
+
+</body>
+</html>

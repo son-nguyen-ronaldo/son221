@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Quản lý sản phẩm</title>
+    <style>
+        button{
+            background-color: cadetblue;
+            color: white;
+            border-radius: 10%;
+        }
+
+    </style>
+    <link rel="stylesheet" href="demo.css">
+
+</head>
+<body onload="showProduct()">
+<p id="hienthi"> </p>
+<div id="save"></div>
+<hr>
+<label for="addnew">Thêm món ăn</label>
+<input type="text" id="addnew">
+<button type="button" onclick="addProduct(document.getElementById('addnew').value)">Add</button>
+<hr>
+<div class="container">
+    <div class="menu">
+        <div class="up">
+            <ul>
+                <li>
+                    <a href="">
+
+
+                        <img src="logo.PNG" height="46" width="114"/></a>
+                </li>
+                <li><a href="">
+                    <img src="icon1.PNG" height="27" width="28"/></li>
+                Trang chủ
+                <li>
+                    <a href="">
+                        <img src="icon4.PNG" height="25" width="27"/></li>
+                Thông báo
+                <li><a href="">
+                    <img src="icon3.PNG" height="24" width="34"/></li>
+                Chat
+            </ul>
+        </div>
+        <div class="down">
+            <div class="search">
+                <input type="" name="" placeholder="Tìm kiếm món ăn">
+                <button>
+                    <img src="search.png" height="1300" width="1200"/></button>
+            </div>
+        </div>
+        <br> <br>
+        <div class="item">
+            <img src="khai vi.jpg" height="300" width="300"/> <img src="tom.jpg" height="300" width="300"/> <img
+                src="=pho.jpg" height="300" width="300"/> <img src="bánh mì.jpg" height="300" width="300"/> <img
+                src="bittet.jpg" height="190" width="266"/> <br> <br> <br>
+        </div>
+        <script src="JS.js"></script>
+
+</body>
+</html>
